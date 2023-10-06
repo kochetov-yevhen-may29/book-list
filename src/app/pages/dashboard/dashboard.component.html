@@ -1,0 +1,31 @@
+<article class="dashboard">
+  <h1 class="dashboard__title">Book List</h1>
+  <app-filter [selected]="selected"></app-filter>
+  <p *ngIf="selected === 'all'" class="dashboard__count">
+    Number of records:
+    <span class="dashboard__strong">{{ allCount$ | async }}</span>
+  </p>
+  <p *ngIf="selected === 'active'" class="dashboard__count">
+    Number of records:
+    <span class="dashboard__strong">{{ activeCount$ | async }}</span>
+  </p>
+  <p *ngIf="selected === 'deactivated'" class="dashboard__count">
+    Number of records:
+    <span class="dashboard__strong">{{ deactivatedCount$ | async }}</span>
+  </p>
+  <div class="dashboard__responsive">
+    <app-table
+      [visibleBookDetails$]="visibleBookDeteils$"
+    ></app-table>
+  </div>
+
+  <footer class="dashboard__footer">
+    <p>Yevhen Kochetov</p>
+    <a
+      class="dashboard__github"
+      href="https://github.com/kochetov-yevhen-may29"
+      target="_blank"
+      >GitHub</a
+    >
+  </footer>
+</article>

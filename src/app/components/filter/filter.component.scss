@@ -1,0 +1,17 @@
+select {
+  padding: 3px;
+  margin-bottom: 5px;
+  outline: none;
+  border: 2px solid #ccc;
+  background-color: #777;
+  color: white;
+
+  &:focus {
+    border-color: rgb(154, 154, 154);
+  }
+}
+
+.filter {
+  margin-bottom: 5px;
+  text-align: right;
+}

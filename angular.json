@@ -14,9 +14,13 @@
       "sourceRoot": "src",
       "prefix": "app",
       "architect": {
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
+        },
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "baseHref": "/book-list/",
             "outputPath": "dist/book-list",
             "index": "src/index.html",
             "main": "src/main.ts",

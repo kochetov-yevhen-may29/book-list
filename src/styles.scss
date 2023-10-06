@@ -1,1 +1,9 @@
-/* You can add global styles to this file, and also import other style files */
+@import './utils/normolize.scss';
+@import './utils/reset.scss';
+
+:root {
+  font-weight: 400;
+  font-size: 14px;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}

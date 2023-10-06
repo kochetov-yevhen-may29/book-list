@@ -1,0 +1,61 @@
+<article class="table">
+  <table>
+    <thead>
+      <tr>
+        <th>Book Title</th>
+        <th>Author Name</th>
+        <th>Category</th>
+        <th>ISBN</th>
+        <th>Created At</th>
+        <th>Edited At</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let bookDetail of visibleBookDetails$ | async">
+        <td [class.deactive]="!bookDetail.status">
+          <span>{{ bookDetail.title }}</span>
+        </td>
+        <td [class.deactive]="!bookDetail.status">{{ bookDetail.author }}</td>
+        <td [class.deactive]="!bookDetail.status">
+          {{ bookDetail.category }}
+        </td>
+        <td [class.deactive]="!bookDetail.status">1{{ bookDetail.isbn }}</td>
+        <td [class.deactive]="!bookDetail.status">
+          {{ bookDetail.createdAt }}
+        </td>
+        <td [class.deactive]="!bookDetail.status">
+          {{ bookDetail.editedAt }}
+        </td>
+        <td class="table__actions actions">
+          <button
+            class="actions__button"
+            routerLink="/book-page"
+          >Edit</button>
+          <button
+            class="actions__button"
+            [class.disabled]="!bookDetail.status"
+            [disabled]="bookDetail.status"
+            (click)="deleteBookDetail(bookDetail)"
+          >
+            Delete
+          </button>
+          <button
+            *ngIf="bookDetail.status"
+            class="actions__button"
+            (click)="toggleBookDetail(bookDetail)"
+          >
+            Deactivate
+          </button>
+          <button
+            *ngIf="!bookDetail.status"
+            class="actions__button"
+            (click)="toggleBookDetail(bookDetail)"
+          >
+            Reactivate
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</article>

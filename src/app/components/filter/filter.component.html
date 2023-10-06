@@ -1,0 +1,17 @@
+<div class="filter">
+  <select
+    id="filter"
+    (change)="selectOption(selected)"
+    [(ngModel)]="selected"
+    (ngModelChange)="updateRoute()"
+    name="selectedOption"
+  >
+  <option
+    *ngFor="let option of options"
+    [value]="option.value"
+    [routerLink]="option.value"
+  >
+    {{option.title}}
+  </option>
+  </select>
+</div>

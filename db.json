@@ -1,0 +1,104 @@
+{
+  "bookDetails": [
+    {
+      "id": 1,
+      "title": "Book 1",
+      "author": "Author 1",
+      "category": "Fiction",
+      "isbn": 1234567890,
+      "createdAt": "12 March 2022, 8:35AM",
+      "editedAt": "13 March 2022, 1:48PM",
+      "status": true
+    },
+    {
+      "id": 2,
+      "title": "Book 2",
+      "author": "Author 2",
+      "category": "Non-Fiction",
+      "isbn": 9876543210,
+      "createdAt": "14 March 2022, 10:15AM",
+      "editedAt": "15 March 2022, 3:22PM",
+      "status": false
+    },
+    {
+      "id": 3,
+      "title": "Book 3",
+      "author": "Author 3",
+      "category": "Science",
+      "isbn": 5432109876,
+      "createdAt": "15 March 2022, 3:22PM",
+      "editedAt": "16 March 2022, 9:45AM",
+      "status": true
+    },
+    {
+      "id": 4,
+      "title": "Book 4",
+      "author": "Author 4",
+      "category": "Fiction",
+      "isbn": 1122334455,
+      "createdAt": "16 March 2022, 9:45AM",
+      "editedAt": "17 March 2022, 2:30PM",
+      "status": true
+    },
+    {
+      "id": 5,
+      "title": "Book 5",
+      "author": "Author 5",
+      "category": "Non-Fiction",
+      "isbn": 9988776655,
+      "createdAt": "17 March 2022, 2:30PM",
+      "editedAt": "18 March 2022, 11:20AM",
+      "status": true
+    },
+    {
+      "id": 6,
+      "title": "Book 6",
+      "author": "Author 6",
+      "category": "Science",
+      "isbn": 7777777777,
+      "createdAt": "18 March 2022, 11:20AM",
+      "editedAt": "19 March 2022, 4:55PM",
+      "status": false
+    },
+    {
+      "id": 7,
+      "title": "Book 7",
+      "author": "Author 7",
+      "category": "Fiction",
+      "isbn": 8888888888,
+      "createdAt": "19 March 2022, 4:55PM",
+      "editedAt": "20 March 2022, 8:10AM",
+      "status": false
+    },
+    {
+      "id": 8,
+      "title": "Book 8",
+      "author": "Author 8",
+      "category": "Non-Fiction",
+      "isbn": 9999999999,
+      "createdAt": "20 March 2022, 8:10AM",
+      "editedAt": "21 March 2022, 12:45PM",
+      "status": true
+    },
+    {
+      "id": 9,
+      "title": "Book 9",
+      "author": "Author 9",
+      "category": "Science",
+      "isbn": 1111111111,
+      "createdAt": "21 March 2022, 12:45PM",
+      "editedAt": "22 March 2022, 5:30PM",
+      "status": false
+    },
+    {
+      "id": 10,
+      "title": "Book 10",
+      "author": "Author 10",
+      "category": "Fiction",
+      "isbn": 2222222222,
+      "createdAt": "22 March 2022, 5:30PM",
+      "editedAt": "23 March 2022, 9:15AM",
+      "status": false
+    }
+  ]
+}
